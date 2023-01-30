@@ -1,4 +1,4 @@
-﻿// This file is part of Notepad++ project
+﻿// This file is part of NotepadPro project
 // Copyright (C)2021 Don HO <don.h@free.fr>
 
 // This program is free software: you can redistribute it and/or modify
@@ -2368,7 +2368,7 @@ bool FindReplaceDlg::processFindNext(const TCHAR *txt2find, const FindOption *op
 				msg = stringReplace(msg, TEXT("$STR_REPLACE$"), newTxt2find);
 				setStatusbarMessage(msg, FSNotFound);
 
-				// if the dialog is not shown, pass the focus to his parent(ie. Notepad++)
+				// if the dialog is not shown, pass the focus to his parent(ie. NotepadPro)
 				if (!::IsWindowVisible(_hSelf))
 				{
 					(*_ppEditView)->getFocus();
@@ -4604,7 +4604,7 @@ void Finder::copyPathnames()
 		if (!str2Clipboard(toClipboard, _hSelf))
 		{
 			assert(false);
-			::MessageBox(NULL, TEXT("Error placing pathnames into clipboard."), TEXT("Notepad++"), MB_ICONINFORMATION);
+			::MessageBox(NULL, TEXT("Error placing pathnames into clipboard."), TEXT("NotepadPro"), MB_ICONINFORMATION);
 		}
 	}
 }
@@ -4705,7 +4705,7 @@ void Finder::copy()
 		if (!str2Clipboard(toClipboard, _hSelf))
 		{
 			assert(false);
-			::MessageBox(NULL, TEXT("Error placing text in clipboard."), TEXT("Notepad++"), MB_ICONINFORMATION);
+			::MessageBox(NULL, TEXT("Error placing text in clipboard."), TEXT("NotepadPro"), MB_ICONINFORMATION);
 		}
 	}
 }

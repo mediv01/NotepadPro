@@ -1,4 +1,4 @@
-// This file is part of Notepad++ project
+// This file is part of NotepadPro project
 // Copyright (C)2021 Don HO <don.h@free.fr>
 
 // This program is free software: you can redistribute it and/or modify
@@ -43,12 +43,12 @@ BEGIN
         BLOCK "040904b0"
         BEGIN
             VALUE    "CompanyName",        "Don HO don.h@free.fr\0"
-            VALUE    "FileDescription",    "Notepad++\0"
+            VALUE    "FileDescription",    "NotepadPro\0"
             VALUE    "FileVersion",        VERSION_VALUE
-            VALUE    "InternalName",       "notepad++.exe\0"
+            VALUE    "InternalName",       "NotepadPro.exe\0"
             VALUE    "LegalCopyright",     "Copyleft 1998-2022 by Don HO\0"
-            VALUE    "OriginalFilename",   "notepad++.exe\0"
-            VALUE    "ProductName",        "Notepad++\0"
+            VALUE    "OriginalFilename",   "NotepadPro.exe\0"
+            VALUE    "ProductName",        "NotepadPro\0"
             VALUE    "ProductVersion",     VERSION_VALUE
         END
     END
@@ -983,7 +983,7 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "Define your language...", IDM_LANG_USER_DLG
         MENUITEM "Open User Defined Language folder...",      IDM_LANG_OPENUDLDIR
-        MENUITEM "Notepad++ User Defined Languages Collection", IDM_LANG_UDLCOLLECTION_PROJECT_SITE
+        MENUITEM "NotepadPro User Defined Languages Collection", IDM_LANG_UDLCOLLECTION_PROJECT_SITE
         MENUITEM "User-Defined",            IDM_LANG_USER
     END
 
@@ -1133,7 +1133,7 @@ BEGIN
     BEGIN
         MENUITEM "Define your language...",   IDM_LANG_USER_DLG
         MENUITEM "Open User Defined Language folder...",        IDM_LANG_OPENUDLDIR
-        MENUITEM "Notepad++ User Defined Languages Collection", IDM_LANG_UDLCOLLECTION_PROJECT_SITE
+        MENUITEM "NotepadPro User Defined Languages Collection", IDM_LANG_UDLCOLLECTION_PROJECT_SITE
     END
     MENUITEM "User-Defined",              IDM_LANG_USER
     END
@@ -1210,16 +1210,16 @@ BEGIN
     BEGIN
         MENUITEM "Command Line Arguments...",      IDM_CMDLINEARGUMENTS
         MENUITEM SEPARATOR
-        MENUITEM "Notepad++ Home",                 IDM_HOMESWEETHOME
-        MENUITEM "Notepad++ Project Page",         IDM_PROJECTPAGE
-        MENUITEM "Notepad++ Online User Manual",   IDM_ONLINEDOCUMENT
-        MENUITEM "Notepad++ Community (Forum)",    IDM_FORUM
+        MENUITEM "NotepadPro Home",                 IDM_HOMESWEETHOME
+        MENUITEM "NotepadPro Project Page",         IDM_PROJECTPAGE
+        MENUITEM "NotepadPro Online User Manual",   IDM_ONLINEDOCUMENT
+        MENUITEM "NotepadPro Community (Forum)",    IDM_FORUM
         MENUITEM SEPARATOR
-        MENUITEM "Update Notepad++",               IDM_UPDATE_NPP
+        MENUITEM "Update NotepadPro",               IDM_UPDATE_NPP
         MENUITEM "Set Updater Proxy...",           IDM_CONFUPDATERPROXY
         MENUITEM SEPARATOR
         MENUITEM "Debug Info...",                  IDM_DEBUGINFO
-        MENUITEM "About Notepad++",                IDM_ABOUT
+        MENUITEM "About NotepadPro",                IDM_ABOUT
     END
 
     MENUITEM "＋",               IDM_FILE_NEW, HELP

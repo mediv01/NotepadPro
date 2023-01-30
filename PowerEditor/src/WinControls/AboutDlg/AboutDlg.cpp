@@ -1,4 +1,4 @@
-// This file is part of Notepad++ project
+// This file is part of NotepadPro project
 // Copyright (C)2021 Don HO <don.h@free.fr>
 
 // This program is free software: you can redistribute it and/or modify
@@ -153,7 +153,7 @@ intptr_t CALLBACK DebugInfoDlg::run_dlgProc(UINT message, WPARAM wParam, LPARAM 
 
 			NppDarkMode::autoSubclassAndThemeChildControls(_hSelf);
 
-			// Notepad++ version
+			// NotepadPro version
 			_debugInfoStr = NOTEPAD_PLUS_VERSION;
 			_debugInfoStr += nppParam.archType() == IMAGE_FILE_MACHINE_I386 ? TEXT("   (32-bit)") : (nppParam.archType() == IMAGE_FILE_MACHINE_AMD64 ? TEXT("   (64-bit)") : TEXT("   (ARM 64-bit)"));
 			_debugInfoStr += TEXT("\r\n");

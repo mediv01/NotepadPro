@@ -1,4 +1,4 @@
-// This file is part of Notepad++ project
+// This file is part of NotepadPro project
 // Copyright (C)2021 Don HO <don.h@free.fr>
 
 // This program is free software: you can redistribute it and/or modify
@@ -17,16 +17,16 @@
 #pragma once
 
 //
-// Notepad++ version: begin
+// NotepadPro version: begin
 //
-#define NOTEPAD_PLUS_VERSION TEXT("Notepad++ v8.4.8")
+#define NOTEPAD_PLUS_VERSION TEXT("NotepadPro v8.4.8")
 
 // should be X.Y : ie. if VERSION_DIGITALVALUE == 4, 7, 1, 0 , then X = 4, Y = 71
 // ex : #define VERSION_VALUE TEXT("5.63\0")
 #define VERSION_VALUE TEXT("8.48\0")
 #define VERSION_DIGITALVALUE 8, 4, 8, 0
 
-// Notepad++ version: end
+// NotepadPro version: end
 
 
 #ifndef IDC_STATIC

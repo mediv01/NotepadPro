@@ -1,4 +1,4 @@
-// This file is part of Notepad++ project
+// This file is part of NotepadPro project
 // Copyright (C)2021 Don HO <don.h@free.fr>
 
 // This program is free software: you can redistribute it and/or modify
@@ -113,7 +113,7 @@ BOOL Notepad_plus::notify(SCNotification *notification)
 					isDirty = true;
 			}
 
-			if (buf->isUnsync()) // buffer in Notepad++ is not syncronized with the file on disk - in this case the buffer is always dirty 
+			if (buf->isUnsync()) // buffer in NotepadPro is not syncronized with the file on disk - in this case the buffer is always dirty 
 				isDirty = true;
 
 			if (buf->isSavePointDirty())
@@ -275,7 +275,7 @@ BOOL Notepad_plus::notify(SCNotification *notification)
 					const rsize_t classNameBufferSize = MAX_PATH;
 					TCHAR className[classNameBufferSize];
 					::GetClassName(hWinParent,className, classNameBufferSize);
-					if (lstrcmp(className, _pPublicInterface->getClassName()) == 0 && hWinParent != _pPublicInterface->getHSelf()) // another Notepad++
+					if (lstrcmp(className, _pPublicInterface->getClassName()) == 0 && hWinParent != _pPublicInterface->getHSelf()) // another NotepadPro
 					{
 						int index = _pDocTab->getCurrentTabIndex();
 						BufferID bufferToClose = notifyDocTab->getBufferByIndex(index);
@@ -287,7 +287,7 @@ BOOL Notepad_plus::notify(SCNotification *notification)
 							_nativeLangSpeaker.messageBox("CannotMoveDoc",
 								_pPublicInterface->getHSelf(),
 								TEXT("Document is modified, save it then try again."),
-								TEXT("Move to new Notepad++ Instance"),
+								TEXT("Move to new NotepadPro Instance"),
 								MB_OK);
 						}
 						else
@@ -302,7 +302,7 @@ BOOL Notepad_plus::notify(SCNotification *notification)
 							}
 						}
 					}
-					else // Not Notepad++, we open it here
+					else // Not NotepadPro, we open it here
 					{
 						docOpenInNewInstance(isInCtrlStat?TransferClone:TransferMove, p.x, p.y);
 					}
@@ -1127,7 +1127,7 @@ BOOL Notepad_plus::notify(SCNotification *notification)
 			if (_rebarBottom.getHSelf() == lpnm->hdr.hwndFrom)
 				notifRebar = &_rebarBottom;
 
-			//If Notepad++ ID, use proper object
+			//If NotepadPro ID, use proper object
 			if (lpnm->wID == REBAR_BAR_TOOLBAR)
 			{
 				POINT pt{};

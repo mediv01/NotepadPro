@@ -1,4 +1,4 @@
-// This file is part of Notepad++ project
+// This file is part of NotepadPro project
 // Copyright (C)2021 Don HO <don.h@free.fr>
 
 // This program is free software: you can redistribute it and/or modify
@@ -27,7 +27,7 @@
 
 using namespace std;
 
-const TCHAR * USERMSG = TEXT(" is not compatible with the current version of Notepad++.\n\n\
+const TCHAR * USERMSG = TEXT(" is not compatible with the current version of NotepadPro.\n\n\
 Do you want to remove this plugin from the plugins directory to prevent this message from the next launch?");
 
 
@@ -146,7 +146,7 @@ int PluginsManager::loadPluginFromPath(const TCHAR *pluginFilePath)
         
 		pi->_pFuncIsUnicode = (PFUNCISUNICODE)GetProcAddress(pi->_hLib, "isUnicode");
 		if (!pi->_pFuncIsUnicode || !pi->_pFuncIsUnicode())
-			throw generic_string(TEXT("This ANSI plugin is not compatible with your Unicode Notepad++."));
+			throw generic_string(TEXT("This ANSI plugin is not compatible with your Unicode NotepadPro."));
 
 		pi->_pFuncSetInfo = (PFUNCSETINFO)GetProcAddress(pi->_hLib, "setInfo");
 
@@ -352,14 +352,14 @@ bool PluginsManager::loadPlugins(const TCHAR* dir, const PluginViewList* pluginU
 	HANDLE hFindFolder = ::FindFirstFile(pluginsFolderFilter.c_str(), &foundData);
 	HANDLE hFindDll = INVALID_HANDLE_VALUE;
 
-	// Get Notepad++ current version
+	// Get NotepadPro current version
 	TCHAR nppFullPathName[MAX_PATH];
 	GetModuleFileName(NULL, nppFullPathName, MAX_PATH);
 	Version nppVer;
 	nppVer.setVersionFrom(nppFullPathName);
 
-	const TCHAR* incompatibleWarning = L"%s's version %s is not compatible to this version of Notepad++ (v%s).\r\nAs a result the plugin cannot be loaded.";
-	const TCHAR* incompatibleWarningWithSolution = L"%s's version %s is not compatible to this version of Notepad++ (v%s).\r\nAs a result the plugin cannot be loaded.\r\n\r\nGo to Updates section and update your plugin to %s for solving the compatibility issue.";
+	const TCHAR* incompatibleWarning = L"%s's version %s is not compatible to this version of NotepadPro (v%s).\r\nAs a result the plugin cannot be loaded.";
+	const TCHAR* incompatibleWarningWithSolution = L"%s's version %s is not compatible to this version of NotepadPro (v%s).\r\nAs a result the plugin cannot be loaded.\r\n\r\nGo to Updates section and update your plugin to %s for solving the compatibility issue.";
 
 	// get plugin folder
 	if (hFindFolder != INVALID_HANDLE_VALUE && (foundData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY))
@@ -380,7 +380,7 @@ bool PluginsManager::loadPlugins(const TCHAR* dir, const PluginViewList* pluginU
 				// - foundFileName: folder-name
 				// _ pluginsFullPathFilter: version
 				// 
-				// Find plugin update info of current plugin and check if it's compatible to Notepad++ current versions
+				// Find plugin update info of current plugin and check if it's compatible to NotepadPro current versions
 				bool isCompatible = true;
 
 				if (pluginUpdateInfoList)
@@ -394,7 +394,7 @@ bool PluginsManager::loadPlugins(const TCHAR* dir, const PluginViewList* pluginU
 						v.setVersionFrom(pluginsFullPathFilter);
 						if (v == pui->_version)
 						{
-							// Find compatible Notepad++ versions
+							// Find compatible NotepadPro versions
 							isCompatible = nppVer.isCompatibleTo(pui->_nppCompatibleVersions.first, pui->_nppCompatibleVersions.second);
 
 							if (!isCompatible && pluginIncompatibleList)
@@ -458,7 +458,7 @@ bool PluginsManager::loadPlugins(const TCHAR* dir, const PluginViewList* pluginU
 					// - foundFileName2: folder-name
 					// _ pluginsFullPathFilter2: version
 					// 
-					// Find plugin update info of current plugin and check if it's compatible to Notepad++ current versions
+					// Find plugin update info of current plugin and check if it's compatible to NotepadPro current versions
 					bool isCompatible2 = true;
 
 					if (pluginUpdateInfoList)
@@ -472,7 +472,7 @@ bool PluginsManager::loadPlugins(const TCHAR* dir, const PluginViewList* pluginU
 							v2.setVersionFrom(pluginsFullPathFilter2);
 							if (v2 == pui2->_version)
 							{
-								// Find compatible Notepad++ versions
+								// Find compatible NotepadPro versions
 								isCompatible2 = nppVer.isCompatibleTo(pui2->_nppCompatibleVersions.first, pui2->_nppCompatibleVersions.second);
 
 								if (!isCompatible2 && pluginIncompatibleList)

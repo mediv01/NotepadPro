@@ -1,4 +1,4 @@
-// This file is part of Notepad++ project
+// This file is part of NotepadPro project
 // Copyright (C)2021 Don HO <don.h@free.fr>
 
 // This program is free software: you can redistribute it and/or modify
@@ -848,7 +848,7 @@ double stodLocale(const generic_string& str, _locale_t loc, size_t* idx)
 }
 
 // Source: https://blogs.msdn.microsoft.com/greggm/2005/09/21/comparing-file-names-in-native-code/
-// Modified to use TCHAR's instead of assuming Unicode and reformatted to conform with Notepad++ code style
+// Modified to use TCHAR's instead of assuming Unicode and reformatted to conform with NotepadPro code style
 static TCHAR ToUpperInvariant(TCHAR input)
 {
 	TCHAR result;
@@ -862,7 +862,7 @@ static TCHAR ToUpperInvariant(TCHAR input)
 }
 
 // Source: https://blogs.msdn.microsoft.com/greggm/2005/09/21/comparing-file-names-in-native-code/
-// Modified to use TCHAR's instead of assuming Unicode and reformatted to conform with Notepad++ code style
+// Modified to use TCHAR's instead of assuming Unicode and reformatted to conform with NotepadPro code style
 int OrdinalIgnoreCaseCompareStrings(LPCTSTR sz1, LPCTSTR sz2)
 {
 	if (sz1 == sz2)
@@ -1289,7 +1289,7 @@ bool isAssoCommandExisting(LPCTSTR FullPathName)
 		hres = AssocQueryString(ASSOCF_VERIFY|ASSOCF_INIT_IGNOREUNKNOWN, ASSOCSTR_COMMAND, ext, NULL, buffer, &bufferLen);
 
         isAssoCommandExisting = (hres == S_OK)                  // check if association exist and no error
-			&& (wcsstr(buffer, TEXT("notepad++.exe")) == NULL); // check association with notepad++
+			&& (wcsstr(buffer, TEXT("NotepadPro.exe")) == NULL); // check association with NotepadPro
 
 	}
 	return isAssoCommandExisting;
@@ -1298,7 +1298,7 @@ bool isAssoCommandExisting(LPCTSTR FullPathName)
 std::wstring s2ws(const std::string& str)
 {
 	using convert_typeX = std::codecvt_utf8<wchar_t>;
-	std::wstring_convert<convert_typeX, wchar_t> converterX("Error in Notepad++ string conversion s2ws!", L"Error in Notepad++ string conversion s2ws!");
+	std::wstring_convert<convert_typeX, wchar_t> converterX("Error in NotepadPro string conversion s2ws!", L"Error in NotepadPro string conversion s2ws!");
 
 	return converterX.from_bytes(str);
 }
@@ -1306,7 +1306,7 @@ std::wstring s2ws(const std::string& str)
 std::string ws2s(const std::wstring& wstr)
 {
 	using convert_typeX = std::codecvt_utf8<wchar_t>;
-	std::wstring_convert<convert_typeX, wchar_t> converterX("Error in Notepad++ string conversion ws2s!", L"Error in Notepad++ string conversion ws2s!");
+	std::wstring_convert<convert_typeX, wchar_t> converterX("Error in NotepadPro string conversion ws2s!", L"Error in NotepadPro string conversion ws2s!");
 
 	return converterX.to_bytes(wstr);
 }
@@ -1545,13 +1545,13 @@ bool isUnsupportedFileName(const generic_string& fileName)
 {
 	bool isUnsupported = true;
 
-	// until the Notepad++ (and its plugins) will not be prepared for filenames longer than the MAX_PATH,
+	// until the NotepadPro (and its plugins) will not be prepared for filenames longer than the MAX_PATH,
 	// we have to limit also the maximum supported length below
 	if ((fileName.size() > 0) && (fileName.size() < MAX_PATH))
 	{
-		// possible raw filenames can contain space(s) or dot(s) at its end (e.g. "\\?\C:\file."), but the Notepad++ advanced
+		// possible raw filenames can contain space(s) or dot(s) at its end (e.g. "\\?\C:\file."), but the NotepadPro advanced
 		// Open/SaveAs IFileOpenDialog/IFileSaveDialog COM-interface based dialogs currently do not handle this well
-		// (but e.g. direct Notepad++ Ctrl+S works ok even with these filenames)
+		// (but e.g. direct NotepadPro Ctrl+S works ok even with these filenames)
 		if (!fileName.ends_with(_T('.')) && !fileName.ends_with(_T(' ')))
 		{
 			bool invalidASCIIChar = false;

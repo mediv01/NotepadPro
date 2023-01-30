@@ -1,4 +1,4 @@
-// This file is part of Notepad++ project
+// This file is part of NotepadPro project
 // Copyright (C)2021 Don HO <don.h@free.fr>
 
 // This program is free software: you can redistribute it and/or modify
@@ -20,9 +20,9 @@
 
 
 
-const TCHAR* nppName   = TEXT("Notepad++_file");
-const TCHAR* nppBackup = TEXT("Notepad++_backup");
-const TCHAR* nppDoc    = TEXT("Notepad++ Document");
+const TCHAR* nppName   = TEXT("NotepadPro_file");
+const TCHAR* nppBackup = TEXT("NotepadPro_backup");
+const TCHAR* nppDoc    = TEXT("NotepadPro Document");
 
 const int nbSupportedLang = 10;
 const int nbExtMax = 27;

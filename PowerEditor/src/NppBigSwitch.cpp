@@ -1,4 +1,4 @@
-// This file is part of Notepad++ project
+// This file is part of NotepadPro project
 // Copyright (C)2021 Don HO <don.h@free.fr>
 
 // This program is free software: you can redistribute it and/or modify
@@ -201,7 +201,7 @@ LRESULT Notepad_plus::process(HWND hwnd, UINT message, WPARAM wParam, LPARAM lPa
 			NppGUI& nppGUI = nppParam.getNppGUI();
 
 			// Windows mode is enabled
-			// and don't change if Notepad++ is already in same mode as OS after changing OS mode
+			// and don't change if NotepadPro is already in same mode as OS after changing OS mode
 			if (NppDarkMode::isWindowsModeEnabled() && (enableDarkMode != NppDarkMode::isEnabled()))
 			{
 				nppGUI._darkmode._isEnabled = enableDarkMode;
@@ -1530,11 +1530,11 @@ LRESULT Notepad_plus::process(HWND hwnd, UINT message, WPARAM wParam, LPARAM lPa
 		{
 			//return _scintillaCtrls4Plugins.destroyScintilla(reinterpret_cast<HWND>(lParam));
 
-			// Destroying allocated Scintilla makes Notepad++ crash
+			// Destroying allocated Scintilla makes NotepadPro crash
 			// because created Scintilla view's pointer is added into _referees of Buffer object automatically.
 			// The deallocated scintilla view in _referees is used in Buffer::nextUntitledNewNumber().
 
-			// So we do nothing here and let Notepad++ destroy allocated Scintilla while it exits
+			// So we do nothing here and let NotepadPro destroy allocated Scintilla while it exits
 			// and we keep this message for the sake of compability withe the existing plugins.
 			return true;
 		}
@@ -2101,8 +2101,8 @@ LRESULT Notepad_plus::process(HWND hwnd, UINT message, WPARAM wParam, LPARAM lPa
 		{
 			int answer = _nativeLangSpeaker.messageBox("WindowsSessionExit",
 				_pPublicInterface->getHSelf(),
-				TEXT("Windows session is about to be terminated but you have some data unsaved. Do you want to exit Notepad++ now?"),
-				TEXT("Notepad++ - Windows session exit"),
+				TEXT("Windows session is about to be terminated but you have some data unsaved. Do you want to exit NotepadPro now?"),
+				TEXT("NotepadPro - Windows session exit"),
 				MB_YESNO | MB_ICONQUESTION | MB_APPLMODAL);
 			if (answer == IDYES)
 				::PostMessage(_pPublicInterface->getHSelf(), WM_CLOSE, 0, 0);
@@ -2163,10 +2163,10 @@ LRESULT Notepad_plus::process(HWND hwnd, UINT message, WPARAM wParam, LPARAM lPa
 				if (MainFileManager.getNbDirtyBuffers() > 0)
 				{
 					// we have unsaved filebuffer(s), give the user a chance to respond
-					// (but only for a non-critical OS restart/shutdown and while the Notepad++ backup mode is OFF)
+					// (but only for a non-critical OS restart/shutdown and while the NotepadPro backup mode is OFF)
 					if (!isForcedShuttingDown && isFirstQueryEndSession && !nppParam.getNppGUI().isSnapshotMode())
 					{
-						// if Notepad++ has been minimized or invisible, we need to show it 1st
+						// if NotepadPro has been minimized or invisible, we need to show it 1st
 						if (::IsIconic(hwnd))
 						{
 							::ShowWindow(hwnd, SW_RESTORE);
@@ -2191,13 +2191,13 @@ LRESULT Notepad_plus::process(HWND hwnd, UINT message, WPARAM wParam, LPARAM lPa
 				if (!isForcedShuttingDown && isFirstQueryEndSession)
 					return FALSE; // request abort of the shutdown (for a non-critical one we can give the user a chance to solve whatever is needed)
 
-				// here is the right place to unblock the modal-dlg blocking the main Notepad++ wnd, because then it will be too late
+				// here is the right place to unblock the modal-dlg blocking the main NotepadPro wnd, because then it will be too late
 				// to do so at the WM_ENDSESSION time (for that we need this thread message queue...)
 
 				// in most cases we will need to take care and programmatically close such dialogs in order to exit gracefully,
-				// otherwise the Notepad++ most probably crashes itself without any tidy-up
+				// otherwise the NotepadPro most probably crashes itself without any tidy-up
 
-				string strLog = "Main Notepad++ wnd is disabled by (an active modal-dlg?):  ";
+				string strLog = "Main NotepadPro wnd is disabled by (an active modal-dlg?):  ";
 				char szBuf[MAX_PATH + 128] = { 0 };
 
 				HWND hActiveWnd = ::GetActiveWindow();
@@ -2236,7 +2236,7 @@ LRESULT Notepad_plus::process(HWND hwnd, UINT message, WPARAM wParam, LPARAM lPa
 
 				// re-test
 				if (::IsWindowEnabled(hwnd))
-					strLog += "  -> Main Notepad++ wnd has been successfully reenabled.";
+					strLog += "  -> Main NotepadPro wnd has been successfully reenabled.";
 
 				if (nppParam.doNppLogNulContentCorruptionIssue())
 				{
@@ -2248,7 +2248,7 @@ LRESULT Notepad_plus::process(HWND hwnd, UINT message, WPARAM wParam, LPARAM lPa
 				}
 			}
 
-			// TODO: here is the last opportunity to call the following WINAPI in a possible future version of the Notepad++
+			// TODO: here is the last opportunity to call the following WINAPI in a possible future version of the NotepadPro
 			// 
 			// flags RESTART_NO_PATCH and RESTART_NO_REBOOT are not set, so we should be restarted if terminated by an update or restart
 			//::RegisterApplicationRestart(restartCommandLine.c_str(), RESTART_NO_CRASH | RESTART_NO_HANG);
@@ -2296,8 +2296,8 @@ LRESULT Notepad_plus::process(HWND hwnd, UINT message, WPARAM wParam, LPARAM lPa
 			if (wParam == FALSE)
 			{
 				// the session is not being ended after all
-				// - it happens when either the Notepad++ returns FALSE to non-critical WM_QUERYENDSESSION or any other app with higher shutdown level
-				//   than Notepad++ (app shuttdown order can be checked by the GetProcessShutdownParameters WINAPI)
+				// - it happens when either the NotepadPro returns FALSE to non-critical WM_QUERYENDSESSION or any other app with higher shutdown level
+				//   than NotepadPro (app shuttdown order can be checked by the GetProcessShutdownParameters WINAPI)
 				// - we will not try to reset back our nppParam _isEndSessionStarted flag somehow, because of we should now that there was already
 				//   a previous shutdown attempt, otherwise we could stubbornly repeat returning FALSE for the next WM_QUERYENDSESSION and
 				//   the system will terminate us
@@ -2309,7 +2309,7 @@ LRESULT Notepad_plus::process(HWND hwnd, UINT message, WPARAM wParam, LPARAM lPa
 				// so DO NOT e.g. Send/Post any message from here onwards!!!
 				nppParam.endSessionStart(); // ensure
 				nppParam.makeEndSessionCritical(); // set our exit-flag to critical even if the bitmask has not the ENDSESSION_CRITICAL set
-				// do not return 0 here and continue to the Notepad++ standard WM_CLOSE code-part (no verbose GUI there this time!!!)
+				// do not return 0 here and continue to the NotepadPro standard WM_CLOSE code-part (no verbose GUI there this time!!!)
 			}
 		} // case WM_ENDSESSION:
 
@@ -2446,7 +2446,7 @@ LRESULT Notepad_plus::process(HWND hwnd, UINT message, WPARAM wParam, LPARAM lPa
 				if (isSnapshotMode)
 					::LockWindowUpdate(NULL);
 
-				//Sends WM_DESTROY, Notepad++ will end
+				//Sends WM_DESTROY, NotepadPro will end
 				::DestroyWindow(hwnd);
 
 				if (!nppParam.isEndSessionCritical())

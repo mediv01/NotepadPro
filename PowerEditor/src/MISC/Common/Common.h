@@ -1,4 +1,4 @@
-// This file is part of Notepad++ project
+// This file is part of NotepadPro project
 // Copyright (C)2021 Don HO <don.h@free.fr>
 
 // This program is free software: you can redistribute it and/or modify
@@ -44,7 +44,7 @@ const bool dirDown = false;
 #endif
 
 
-#define NPP_INTERNAL_FUCTION_STR L"Notepad++::InternalFunction"
+#define NPP_INTERNAL_FUCTION_STR L"NotepadPro::InternalFunction"
 
 typedef std::basic_string<TCHAR> generic_string;
 typedef std::basic_stringstream<TCHAR> generic_stringstream;

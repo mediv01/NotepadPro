@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------------------------
-this file is part of notepad++
+this file is part of NotepadPro
 Copyright (C)2003 Don HO < donho@altern.org >
 
 This program is free software; you can redistribute it and/or

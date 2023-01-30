@@ -1,4 +1,4 @@
-// This file is part of Notepad++ project
+// This file is part of NotepadPro project
 // Copyright (C)2021 Don HO <don.h@free.fr>
 
 // This program is free software: you can redistribute it and/or modify
@@ -185,7 +185,7 @@ BufferID Notepad_plus::doOpen(const generic_string& fileName, bool isRecursive, 
 	{
 		// TODO:
 		// for the raw filenames we can allow even the usually unsupported filenames in the future,
-		// but not now as it is not fully supported by the Notepad++ COM IFileDialog based Open/SaveAs dialogs
+		// but not now as it is not fully supported by the NotepadPro COM IFileDialog based Open/SaveAs dialogs
 		//if (isRawFileName)
 		//{
 		//	int answer = _nativeLangSpeaker.messageBox("OpenNonconformingWin32FileName",
@@ -200,7 +200,7 @@ BufferID Notepad_plus::doOpen(const generic_string& fileName, bool isRecursive, 
 		//}
 		//else
 		//{
-			// unsupported, use the existing Notepad++ file dialog to report
+			// unsupported, use the existing NotepadPro file dialog to report
 			_nativeLangSpeaker.messageBox("OpenFileError",
 				_pPublicInterface->getHSelf(),
 				TEXT("Cannot open file \"$STR_REPLACE$\"."),
@@ -533,7 +533,7 @@ bool Notepad_plus::doReload(BufferID id, bool alert)
 	{
 		int answer = _nativeLangSpeaker.messageBox("DocReloadWarning",
 			_pPublicInterface->getHSelf(),
-			TEXT("Are you sure you want to reload the current file and lose the changes made in Notepad++?"),
+			TEXT("Are you sure you want to reload the current file and lose the changes made in NotepadPro?"),
 			TEXT("Reload"),
 			MB_YESNO | MB_ICONEXCLAMATION | MB_APPLMODAL);
 		if (answer != IDYES)
@@ -635,13 +635,13 @@ bool Notepad_plus::doSave(BufferID id, const TCHAR * filename, bool isCopy)
 		}
 		else
 		{
-			// try to open Notepad++ in admin mode
+			// try to open NotepadPro in admin mode
 			bool isSnapshotMode = NppParameters::getInstance().getNppGUI().isSnapshotMode();
 			if (isSnapshotMode) // if both rememberSession && backup mode are enabled
-			{                   // Open the 2nd Notepad++ instance in Admin mode, then close the 1st instance.
+			{                   // Open the 2nd NotepadPro instance in Admin mode, then close the 1st instance.
 				int openInAdminModeRes = _nativeLangSpeaker.messageBox("OpenInAdminMode",
 				_pPublicInterface->getHSelf(),
-				TEXT("This file cannot be saved and it may be protected.\rDo you want to launch Notepad++ in Administrator mode?"),
+				TEXT("This file cannot be saved and it may be protected.\rDo you want to launch NotepadPro in Administrator mode?"),
 				TEXT("Save failed"),
 				MB_YESNO);
 
@@ -661,7 +661,7 @@ bool Notepad_plus::doSave(BufferID id, const TCHAR * filename, bool isCopy)
 					{
 						_nativeLangSpeaker.messageBox("OpenInAdminModeFailed",
 							_pPublicInterface->getHSelf(),
-							TEXT("Notepad++ cannot be opened in Administrator mode."),
+							TEXT("NotepadPro cannot be opened in Administrator mode."),
 							TEXT("Open in Administrator mode failed"),
 							MB_OK);
 					}
@@ -673,10 +673,10 @@ bool Notepad_plus::doSave(BufferID id, const TCHAR * filename, bool isCopy)
 				}
 			}
 			else // rememberSession && backup mode are not both enabled
-			{    // open only the file to save in Notepad++ of Administrator mode by keeping the current instance.
+			{    // open only the file to save in NotepadPro of Administrator mode by keeping the current instance.
 				int openInAdminModeRes = _nativeLangSpeaker.messageBox("OpenInAdminModeWithoutCloseCurrent",
 				_pPublicInterface->getHSelf(),
-				TEXT("The file cannot be saved and it may be protected.\rDo you want to launch Notepad++ in Administrator mode?"),
+				TEXT("The file cannot be saved and it may be protected.\rDo you want to launch NotepadPro in Administrator mode?"),
 				TEXT("Save failed"),
 				MB_YESNO);
 
@@ -705,7 +705,7 @@ bool Notepad_plus::doSave(BufferID id, const TCHAR * filename, bool isCopy)
 					{
 						_nativeLangSpeaker.messageBox("OpenInAdminModeFailed",
 							_pPublicInterface->getHSelf(),
-							TEXT("Notepad++ cannot be opened in Administrator mode."),
+							TEXT("NotepadPro cannot be opened in Administrator mode."),
 							TEXT("Open in Administrator mode failed"),
 							MB_OK);
 					}
@@ -1817,7 +1817,7 @@ bool Notepad_plus::fileSaveAs(BufferID id, bool isSaveCopy)
 		{
 			_nativeLangSpeaker.messageBox("FileAlreadyOpenedInNpp",
 				_pPublicInterface->getHSelf(),
-				TEXT("The file is already opened in Notepad++."),
+				TEXT("The file is already opened in NotepadPro."),
 				TEXT("ERROR"),
 				MB_OK | MB_ICONSTOP);
 			switchToFile(other);

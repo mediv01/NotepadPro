@@ -1,4 +1,4 @@
-// This file is part of Notepad++ project
+// This file is part of NotepadPro project
 // Copyright (C)2021 Don HO <don.h@free.fr>
 
 // This program is free software: you can redistribute it and/or modify
@@ -20,6 +20,6 @@
 
 #define CF_HTML			TEXT("HTML Format")
 #define CF_RTF			TEXT("Rich Text Format")
-#define CF_NPPTEXTLEN	TEXT("Notepad++ Binary Text Length")
+#define CF_NPPTEXTLEN	TEXT("NotepadPro Binary Text Length")
 
 #endif //CLIPBOARDFORMATS_H
