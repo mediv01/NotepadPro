@@ -37,8 +37,7 @@ The comments are here for explanation, it's not necessary to translate them.
 		- Updated on April 30th, 2017 for version 7.3.3 by Patriccollu di Santa Maria è Sichè
 		- Created on September 14th, 2016 for version 6.9.2 by Patriccollu di Santa Maria è Sichè
 
-    The latest update is still available here:
-	https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/PowerEditor/installer/nativeLang/corsican.xml
+
 -->
 <NotepadPlus>
     <Native-Langue name="Corsu" filename="corsican.xml" version="8.4.9">

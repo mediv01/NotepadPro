@@ -2,7 +2,6 @@
  <!--
 -    Traducerea în română pentru NotepadPro 7.6.6
 -    Ultima modificare 30 Ianuarie 2019 de către Barna Cosmin Marian
-     Pentru actualizări vizitați: https://github.com/notepad-plus-plus/notepad-plus-plus/tree/master/PowerEditor/installer/nativeLang
  -->
 <NotepadPlus>
     <Native-Langue name="Romanian" filename="romanian.xml" version="7.6.6">
