@@ -59,9 +59,6 @@ END
 IDI_M30ICON                     ICON      "icons/npp.ico"
 IDI_CHAMELEON                   ICON      "icons/chameleon.ico"
 IDI_CHAMELEON_DM                ICON      "icons/darkMode/about/chameleon.ico"
-//IDI_JESUISCHARLIE             ICON      "icons/Je_suis_Charlie.ico"
-//IDI_GILETJAUNE                ICON      "icons/giletJaune.ico"
-//IDI_SAMESEXMARRIAGE           ICON      "icons/same-sexMarriageTaiwan.ico"
 IDI_ICONABSENT                  ICON      "icons/iconAbsent.ico"
 
 //
