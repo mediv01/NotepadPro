@@ -532,7 +532,7 @@ enum Platform { PF_UNKNOWN, PF_X86, PF_X64, PF_IA64, PF_ARM64 };
 	// }
 	//
 	// Note: in the case of calling failure ("false" is returned), you may need to change NppDarkMode::Colors structure to:
-	// https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/PowerEditor/src/NppDarkMode.h#L32
+	// https://github.com/mediv01/NotepadPro/blob/master/PowerEditor/src/NppDarkMode.h#L32
 
 	#define NPPM_GETCURRENTCMDLINE (NPPMSG + 109)
 	// INT NPPM_GETCURRENTCMDLINE(size_t strLen, TCHAR *commandLineStr)

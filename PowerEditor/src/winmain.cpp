@@ -645,7 +645,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR pCmdLine, int)
 			upPlParams += TEXT(" -upZip");
 
 			// overrided "InfoUrl" in gup.xml
-			upPlParams += TEXT(" https://notepad-plus-plus.org/update/pluginListDownloadUrl.php");
+			upPlParams += TEXT(" https://github.com/mediv01/NotepadPro");
 
 			// indicate the pluginList installation location
 			upPlParams += nppParameters.getPluginConfDir();

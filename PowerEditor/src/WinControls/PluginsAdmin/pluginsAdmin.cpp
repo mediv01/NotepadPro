@@ -274,7 +274,7 @@ void PluginsAdminDlg::create(int dialogID, bool isRTL, bool msgDestParent)
 	::SetWindowText(hPluginListVersionNumber, _pluginListVersion.c_str());
 
 	_repoLink.init(_hInst, _hSelf);
-	_repoLink.create(::GetDlgItem(_hSelf, IDC_PLUGINLIST_ADDR), TEXT("https://github.com/notepad-plus-plus/nppPluginList"));
+	_repoLink.create(::GetDlgItem(_hSelf, IDC_PLUGINLIST_ADDR), TEXT("https://github.com/mediv01/NotepadPro/nppPluginList"));
 
 	goToCenter();
 }

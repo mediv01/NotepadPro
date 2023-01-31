@@ -4717,7 +4717,7 @@ void Finder::beginNewFilesSearch()
 
 	// Use SCI_SETSEL(0, 0) instead of SCI_SETCURRENTPOS(0) to workaround
 	// an eventual regression or a change of behaviour in Scintilla 4.4.6
-	// ref: https://github.com/notepad-plus-plus/notepad-plus-plus/issues/9595#issuecomment-789824579
+	// ref: https://github.com/mediv01/NotepadPro/issues/9595#issuecomment-789824579
 	//
 	_scintView.execute(SCI_SETSEL, 0, 0);
 	//_scintView.execute(SCI_SETCURRENTPOS, 0);
