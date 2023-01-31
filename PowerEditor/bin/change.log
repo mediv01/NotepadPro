@@ -1,8 +1,8 @@
-Notepad++ v8.4.8 bug-fixes and new features:
+NotepadPro v8.4.8 bug-fixes and new features:
 
 1.  Update to Scintilla 5.3.2 and Lexilla 5.2.1.
 2.  Dark mode: Add "Follow Windows dark/light mode" feature, and toolbar, tabbar and theme choices are remembered for 2 modes separately.
-3.  Fix inconsistencies at OS-forced Notepad++ v8.4.7 exit.
+3.  Fix inconsistencies at OS-forced NotepadPro v8.4.7 exit.
 4.  Make tab context menu customizable.
 5.  Make Macro & Run menu reorganizable with sub-menu by modifying shortcuts.xml.
 6.  Fix crash on Win32 Namespace prefixed file name.
@@ -37,4 +37,4 @@ Included plugins:
 
 Updater (Installer only):
 
-* WinGup (for Notepad++) v5.2.4
+* WinGup (for NotepadPro) v5.2.4
