@@ -4407,7 +4407,7 @@ generic_string NppParameters::getLocPathFromStr(const generic_string & localizat
 	if (localizationCode == TEXT("sgs"))
 		return TEXT("samogitian.xml");
 	if (localizationCode == TEXT("yue"))
-		return TEXT("hongKongCantonese.xml");
+		return TEXT("Cantonese.xml");
 	if (localizationCode == TEXT("ab") || localizationCode == TEXT("abk"))
 		return TEXT("abkhazian.xml");
 
