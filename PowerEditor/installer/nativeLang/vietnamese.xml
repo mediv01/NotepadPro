@@ -331,17 +331,17 @@ The comments are here for explanation, it's not necessary to translate them.
                     <Item id="46001" name="Cấu hình kiểu dáng..."/>
                     <Item id="46250" name="Định nghĩa ngôn ngữ của bạn..."/>
                     <Item id="46300" name="Mở thư mục ngôn ngữ người dùng tự định nghĩa..."/>
-                    <Item id="46301" name="Bộ sưu tập ngôn ngữ tự định nghĩa Notepad++"/>
+                    <Item id="46301" name="Bộ sưu tập ngôn ngữ tự định nghĩa NotepadPro"/>
                     <Item id="46180" name="Người dùng tự định nghĩa"/>
                     <Item id="47000" name="Về Notepad ++..."/>
                     <Item id="47010" name="Các đối số dòng lệnh..."/>
-                    <Item id="47001" name="Trang chủ Notepad++"/>
-                    <Item id="47002" name="Trang dự án Notepad++"/>
+                    <Item id="47001" name="Trang chủ NotepadPro"/>
+                    <Item id="47002" name="Trang dự án NotepadPro"/>
                     <Item id="47003" name="Tài liệu trực tuyến"/>
                     <Item id="47004" name="Diễn đàn"/>
                     <Item id="47012" name="Thông tin gỡ lỗi..."/>
                     <Item id="47005" name="Lấy thêm trình cắm"/>
-                    <Item id="47006" name="Cập nhật Notepad++"/>
+                    <Item id="47006" name="Cập nhật NotepadPro"/>
                     <Item id="47009" name="Thiết lập proxy cập nhật..."/>
                     <Item id="48005" name="Nhập trình cắm..."/>
                     <Item id="48006" name="Nhập chủ đề kiểu dáng..."/>
@@ -892,7 +892,7 @@ The comments are here for explanation, it's not necessary to translate them.
 
                     <Item id="6131" name="Bảng chọn"/>
                     <Item id="6122" name="Ẩn thanh bảng chọn (dùng phím Alt hay F10 để bật tắt)"/>
-                    <Item id="6132" name="Ẩn các lối tắt bên phải ＋ ▼ ✕ từ thanh bảng chọn (Cần khởi động lại Notepad++)"/>
+                    <Item id="6132" name="Ẩn các lối tắt bên phải ＋ ▼ ✕ từ thanh bảng chọn (Cần khởi động lại NotepadPro)"/>
                     <Item id="6123" name="Địa phương hoá"/>
 
                     <Item id="6128" name="Biểu tượng thay thế"/>
@@ -1000,7 +1000,7 @@ Bạn có thể định nghĩa một vài mốc đánh dấu bằng cách sử d
                 </DefaultDir>
 
                 <FileAssoc title="Liên kết tệp">
-                    <Item id="4008" name="Xin hãy thoát Notepad++ ra và chạy lại Notepad++ trong chế độ quản trị viên để sử dụng tính năng này."/>
+                    <Item id="4008" name="Xin hãy thoát NotepadPro ra và chạy lại NotepadPro trong chế độ quản trị viên để sử dụng tính năng này."/>
                     <Item id="4009" name="Phần mở rộng được hỗ trợ:"/>
                     <Item id="4010" name="Phần mở rộng đã đăng ký:"/>
                 </FileAssoc>
@@ -1073,7 +1073,7 @@ Bạn có thể định nghĩa một vài mốc đánh dấu bằng cách sử d
                 </Print>
 
                 <Searching title="Tìm kiếm">
-                    <Item id="6902" name="Dùng phông đơn cách trong hộp thoại Tìm (Cần khởi động lại Notepad++)"/>
+                    <Item id="6902" name="Dùng phông đơn cách trong hộp thoại Tìm (Cần khởi động lại NotepadPro)"/>
                     <Item id="6903" name="Vẫn mở hộp thoại Tìm sau khi tìm kiếm mà đầu ra nằm ở cửa sổ kết quả"/>
                     <Item id="6904" name="Xác nhận Thay thế tất cả trong tất cả các tài liệu được mở"/>
                     <Item id="6905" name="Thay thế: Đừng di chuyển đến trường hợp tiếp theo"/>
@@ -1135,10 +1135,10 @@ Bạn có thể định nghĩa một vài mốc đánh dấu bằng cách sử d
 
                 <MultiInstance title="Đa-hiện-thể &amp; Ngày giờ">
                     <Item id="6151" name="Thiết đặt đa-hiện-thể"/>
-                    <Item id="6152" name="Mở phiên trong một hiện thể Notepad++ mới"/>
+                    <Item id="6152" name="Mở phiên trong một hiện thể NotepadPro mới"/>
                     <Item id="6153" name="Luôn ở trong chế độ đa-hiện-thể"/>
                     <Item id="6154" name="Mặc định (đơn-hiện-thể)"/>
-                    <Item id="6155" name="* Việc chỉnh sửa thiết đặt này yêu cầu khởi động lại Notepad++"/>
+                    <Item id="6155" name="* Việc chỉnh sửa thiết đặt này yêu cầu khởi động lại NotepadPro"/>
                     <Item id="6171" name="Tuỳ chỉnh chèn ngày giờ"/>
                     <Item id="6175" name="Đảo ngược thứ tự ngày giờ mặc định (định dạng ngắn &amp;&amp; dài)"/>
                     <Item id="6172" name="Định dạng tuỳ chỉnh:"/>
@@ -1201,11 +1201,11 @@ Bạn có thể định nghĩa một vài mốc đánh dấu bằng cách sử d
                     <Item id="6313" name="Lặng lẽ cập nhật"/>
                     <Item id="6325" name="Cuộn xuống dòng cuối sau khi cập nhật"/>
                     <Item id="6322" name="Đuôi tệp phiên:"/>
-                    <Item id="6323" name="Bật trình tự cập nhật Notepad++"/>
+                    <Item id="6323" name="Bật trình tự cập nhật NotepadPro"/>
                     <Item id="6324" name="Khung chuyển tài liệu (Ctrl+TAB)"/>
                     <Item id="6331" name="Chỉ hiện tên tệp trong thanh tiêu đề"/>
                     <Item id="6334" name="Tự động phát hiện biên mã kí tự"/>
-                    <Item id="6349" name="Sử dụng DirectWrite (Có thể cải thiện kết xuất các kí tự đặc biệt, cần khởi động lại Notepad++)"/>
+                    <Item id="6349" name="Sử dụng DirectWrite (Có thể cải thiện kết xuất các kí tự đặc biệt, cần khởi động lại NotepadPro)"/>
                     <Item id="6337" name="Đuôi tệp không gian làm việc:"/>
                     <Item id="6114" name="Bật"/>
                     <Item id="6117" name="Bật hành vi DGĐN (dùng gần đây nhất)"/>
@@ -1278,8 +1278,8 @@ Bạn có thể mở lại hộp thoại này ở phần Thiết đặt về sau
             </DoSaveAll> <!-- HowToReproduce: Check the 'Enable Save All confirm dialog' checkbox in Preference->MISC, now click 'Save all' -->
         </Dialog>
         <MessageBox> <!-- $INT_REPLACE$ is a place holder, don't translate it -->
-            <ContextMenuXmlEditWarning title="Chỉnh sửa contextMenu" message="Chỉnh sửa contextMenu.xml cho phép bạn chỉnh sửa bảng chọn ngữ cảnh bật lên Notepad++ của bạn.
-Bạn phải khởi động lại Notepad++ để nó có hiệu lực sau khi sửa contextMenu.xml."/>
+            <ContextMenuXmlEditWarning title="Chỉnh sửa contextMenu" message="Chỉnh sửa contextMenu.xml cho phép bạn chỉnh sửa bảng chọn ngữ cảnh bật lên NotepadPro của bạn.
+Bạn phải khởi động lại NotepadPro để nó có hiệu lực sau khi sửa contextMenu.xml."/>
             <SaveCurrentModifWarning title="Lưu chỉnh sửa hiện tại" message="Bạn nên lưu chỉnh sửa hiện tại lại.
 Tất cả chỉnh sửa được lưu sẽ không thể được làm lại.
 
@@ -1288,15 +1288,15 @@ Tiếp tục chứ?"/> <!-- HowToReproduce: when you openned file is modified bu
 Tất cả chỉnh sửa được lưu sẽ không thể được làm lại.
 
 Tiếp tục chứ?"/> <!-- HowToReproduce: when you openned file is modified and saved, then you are changing file encoding. -->
-            <CannotMoveDoc title="Di chuyển sang hiện thể Notepad++ mới" message="Tài liệu đã được chỉnh sửa, hãy lưu nó và thử lại."/> <!-- HowToReproduce: From your Notepad++ drag & drop a clean (not dirty) file to outside of Notepad++, another instance of Notepad++ will be created. Then from your first Notepad++ drag & drop an unsaved file to the new instance. -->
-            <DocReloadWarning title="Reload" message="Bạn có chắc là muốn tải lại tệp hiện tại và để mất các thay đổi ở trong Notepad++ không?"/>
+            <CannotMoveDoc title="Di chuyển sang hiện thể NotepadPro mới" message="Tài liệu đã được chỉnh sửa, hãy lưu nó và thử lại."/> <!-- HowToReproduce: From your NotepadPro drag & drop a clean (not dirty) file to outside of NotepadPro, another instance of NotepadPro will be created. Then from your first NotepadPro drag & drop an unsaved file to the new instance. -->
+            <DocReloadWarning title="Reload" message="Bạn có chắc là muốn tải lại tệp hiện tại và để mất các thay đổi ở trong NotepadPro không?"/>
             <FileLockedWarning title="Lưu thất bại" message="Xin hãy kiểm tra xem liệu tệp này có được mở trong chương trình khác hay không"/>
-            <FileAlreadyOpenedInNpp title="" message="Tệp này đã được mở trong Notepad++ rồi."/>
+            <FileAlreadyOpenedInNpp title="" message="Tệp này đã được mở trong NotepadPro rồi."/>
             <RenameTabTemporaryNameAlreadyInUse title="Đổi tên thất bại" message="Tên được chỉ định đã được sử dụng trong một thẻ khác."/> <!-- HowToReproduce: Rename the tab of an untitled document and provide a name that is the same as an already-existing tab of an untitled document. -->
             <DeleteFileFailed title="Xoá tệp" message="Xoá tệp thất bại"/> <!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
             
             <NbFileToOpenImportantWarning title="Số lượng tệp cần mở là quá lớn" message="$INT_REPLACE$ tệp sắp sửa được mở.
-Bạn có chắc là muốn mở chúng không?"/> <!-- HowToReproduce: Check "Open all files of folder instead of launching Folder as Workspace on folder dropping" in "Default Directory" of Preferences dialog, then drop a folder which contains more then 200 files into Notepad++. -->
+Bạn có chắc là muốn mở chúng không?"/> <!-- HowToReproduce: Check "Open all files of folder instead of launching Folder as Workspace on folder dropping" in "Default Directory" of Preferences dialog, then drop a folder which contains more then 200 files into NotepadPro. -->
             <SettingsOnCloudError title="Thiết đặt đám mây" message="Trông có vẻ như đường dẫn của của phần thiết đặt đám mây được đặt trên một ổ đĩa chỉ đọc,
 hoặc trên một thư mục cần đúng đặc quyền về truy cập ghi.
 Các thiết đặt đám mây của bạn sẽ bị huỷ. Xin hãy đặt lại một giá trị mạch lạc thông qua hộp thoại Sở thích."/>
@@ -1322,14 +1322,14 @@ Bạn có muốn tải lại nó không?"/>
             <DoReloadOrNotAndLooseChange title="Tải lại" message="&quot;$STR_REPLACE$&quot;
 
 Tệp này đã bị một chương trình khác chỉnh sửa.
-Bạn có muốm tải lại nó và mất đi các thay đổi được tạo ra trong Notepad++ không?"/>
+Bạn có muốm tải lại nó và mất đi các thay đổi được tạo ra trong NotepadPro không?"/>
             <PrehistoricSystemDetected title="Phát hiện hệ thống cổ đại" message="Có vẻ như bạn vẫn đang sử dụng một hệ thống cổ đại. Tính năng này chỉ hoạt động trên một hệ thống hiện đại, xin lỗi."/> <!-- HowToReproduce: Launch "Document Map" under Windows XP. -->
-            <XpUpdaterProblem title="Trình cập nhật Notepad++" message="Trình cập nhật Notepad++ không tườn thích với XP do các lớp bảo mật lỗi thời trên XP.
-Bạn có muốn đi đến trang Notepad++ để tải xuống phiên bản mới nhất không?"/> <!-- HowToReproduce: Run menu "? -> Update Notepad++" under Windows XP. -->
-            <GUpProxyConfNeedAdminMode title="Thiết đặt proxy" message="Xin hãy chạy lại Notepad++ trong chế độ quản trị viên để cấu hình proxy."/>
+            <XpUpdaterProblem title="Trình cập nhật NotepadPro" message="Trình cập nhật NotepadPro không tườn thích với XP do các lớp bảo mật lỗi thời trên XP.
+Bạn có muốn đi đến trang NotepadPro để tải xuống phiên bản mới nhất không?"/> <!-- HowToReproduce: Run menu "? -> Update NotepadPro" under Windows XP. -->
+            <GUpProxyConfNeedAdminMode title="Thiết đặt proxy" message="Xin hãy chạy lại NotepadPro trong chế độ quản trị viên để cấu hình proxy."/>
             <DocTooDirtyToMonitor title="Vấn đề theo dõi" message="Tài liệu này bị 'bẩn'. Xin hãy lưu các chỉnh sửa lại trước khi theo dõi nó."/>
             <DocNoExistToMonitor title="Vấn đề theo dõi" message="Tệp nên tồn tại để có thể được theo dõi."/>
-            <FileTooBigToOpen title="Vấn đề kích cỡ tệp" message="Tệp này là quá lớn để Notepad++ có thể mở được."/> <!-- HowToReproduce: Try to open a 4GB file (it's not easy to reproduce, it depends on your system). -->
+            <FileTooBigToOpen title="Vấn đề kích cỡ tệp" message="Tệp này là quá lớn để NotepadPro có thể mở được."/> <!-- HowToReproduce: Try to open a 4GB file (it's not easy to reproduce, it depends on your system). -->
             <FileLoadingException title="Mã ngoại lệ: $STR_REPLACE$" message="Một lỗi đã xảy ra khi đang tải tệp!"/>
             <WantToOpenHugeFile title="Opening huge file warning" message="Mở một tệp lớn 2GB+ sẽ mất vài phút.
 Bạn có muốn mở tệp không?"/>
@@ -1341,8 +1341,8 @@ Bạn có muốn mở tệp không?"/>
 Bạn vẫn muốn lưu tệp hiện tại chứ?"/> <!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
             <LoadStylersFailed title="Tải stylers.xml thất bại" message="Tải &quot;$STR_REPLACE$&quot; thất bại!"/>
             <LoadLangsFailed title="Trình cấu hình" message="Tải langs.xml thất bại!
-Bạn có muốn khôi phục tệp langs.xml của bạn không?"/> <!-- HowToReproduce: Close Notepad++. Use another editor to remove all content of "langs.xml" (0 length) then save it. Open Notepad++. -->
-            <LoadLangsFailedFinal title="Trình cấu hình" message="Tải langs.xml thất bại!"/> <!-- HowToReproduce: Close Notepad++. Use another editor to make "langs.xml" an invalid xml file then save it. Open Notepad++. -->
+Bạn có muốn khôi phục tệp langs.xml của bạn không?"/> <!-- HowToReproduce: Close NotepadPro. Use another editor to remove all content of "langs.xml" (0 length) then save it. Open NotepadPro. -->
+            <LoadLangsFailedFinal title="Trình cấu hình" message="Tải langs.xml thất bại!"/> <!-- HowToReproduce: Close NotepadPro. Use another editor to make "langs.xml" an invalid xml file then save it. Open NotepadPro. -->
             <FolderAsWorspaceSubfolderExists title="vấn đề thêm thư mục của Thư mục như là không gian làm việc" message="Một thư mục con của thư mục bạn muốn thêm tồn tại.
 Xin hãy loại bỏ gốc của nó từ bảng trước khi bạn thêm thư mục &quot;$STR_REPLACE$&quot;."/> <!-- HowToReproduce: Add a folder like "c:\temp\aFolder\" into "Folder as Workspace" panel, then try to add "c:\temp\". -->
 
@@ -1365,16 +1365,16 @@ xin hãy chọn tên khác."/>
             <SCMapperDoDeleteOrNot title="Bạn chắc chưa?" message="Bạn có chắc là muốn xoá phím tắt này không?"/>
             <FindCharRangeValueError title="Vấn đề giá trị khoảng" message="Bạn nên nhập trong khoảng từ 0 đến 255."/>
             <OpenInAdminMode title="Lưu thất bại" message="Tệp không thể được lưu và có thể nó đã được bảo vệ.
-Bạn có muốn chạy Notepad++ trong chế độ quản trị viên không?"/>
+Bạn có muốn chạy NotepadPro trong chế độ quản trị viên không?"/>
             <OpenInAdminModeWithoutCloseCurrent title="Lưu thất bại" message="Tệp không thể được lưu và có thể nó đã được bảo vệ.
-Bạn có muốn chạy Notepad++ trong chế độ quản trị viên không?"/>
-            <OpenInAdminModeFailed title="Mở trong chế độ quản trị viên thất bại" message="Notepad++ không thể được mở trong chế độ quản trị viên."/> <!-- HowToReproduce: When you have no Admin privilege and you try to save a modified file in a protected location (for example: any file in sub-folder of "C:\Program Files\". This message will appear after replying "Yes" to "Open in Admin mode" dialog. -->
+Bạn có muốn chạy NotepadPro trong chế độ quản trị viên không?"/>
+            <OpenInAdminModeFailed title="Mở trong chế độ quản trị viên thất bại" message="NotepadPro không thể được mở trong chế độ quản trị viên."/> <!-- HowToReproduce: When you have no Admin privilege and you try to save a modified file in a protected location (for example: any file in sub-folder of "C:\Program Files\". This message will appear after replying "Yes" to "Open in Admin mode" dialog. -->
             <ViewInBrowser title="Xem tệp hiện tại trong trình duyệt" message="Ứng dụng không thể được tìm thấy trong hệ thống của bạn."/>
-            <ExitToUpdatePlugins title="Notepad++ sắp sửa thoát ra" message="Nếu bạn nháy vào CÓ, bạn sẽ thoát Notepad++ để tiếp tục thao tác.
-Notepad++ sẽ được khởi động lại sau khi tất cả các thao tác được chấm dứt.
+            <ExitToUpdatePlugins title="NotepadPro sắp sửa thoát ra" message="Nếu bạn nháy vào CÓ, bạn sẽ thoát NotepadPro để tiếp tục thao tác.
+NotepadPro sẽ được khởi động lại sau khi tất cả các thao tác được chấm dứt.
 Tiếp tục không?"/>
-            <NeedToRestartToLoadPlugins title="Notepad++ cần phải được chạy lại" message="Bạn phải khởi động lại Notepad++ để tải các trình cắm mà bạn đã cài đặt."/> <!-- HowToReproduce: Import a plugin via menu "Settings->Import->Import Plugin(s)...". -->
-            <ChangeHistoryEnabledWarning title="Notepad++ cần được chạy lại" message="Bạn phải khởi động lại Notepad++ to để bật Thay đổi lịch sử."/> <!-- HowToReproduce: uncheck "Display Change History" via Preferences dialog "Marges/Border/Edge. -->
+            <NeedToRestartToLoadPlugins title="NotepadPro cần phải được chạy lại" message="Bạn phải khởi động lại NotepadPro để tải các trình cắm mà bạn đã cài đặt."/> <!-- HowToReproduce: Import a plugin via menu "Settings->Import->Import Plugin(s)...". -->
+            <ChangeHistoryEnabledWarning title="NotepadPro cần được chạy lại" message="Bạn phải khởi động lại NotepadPro to để bật Thay đổi lịch sử."/> <!-- HowToReproduce: uncheck "Display Change History" via Preferences dialog "Marges/Border/Edge. -->
         </MessageBox>
         <ClipboardHistory>
             <PanelTitle name="Lịch sử bảng tạm"/>
@@ -1491,8 +1491,8 @@ Tiếp tục không?"/>
             <word-chars-list-warning-end value="  trong danh sách kí tự của bạn."/> <!-- HowToReproduce: In "Delimiter" section of Preferences dialog, check "Add your character as part of word\r(don't choose it unless you know what you're doing)", then type a white-space in the text field. -->
             <backup-select-folder value="Chọn một thư mục làm thư mục sao lưu"/> <!-- HowToReproduce: Settings > Preferences > Backup > [...] -->
             <cloud-invalid-warning value="Đường dẫn không hợp lệ."/>
-            <cloud-restart-warning value="Xin hãy khởi động lại Notepad++ để nó có hiệu lực."/>
-            <cloud-select-folder value="Chọn một thư mục từ/đến nơi Notepad++ đọc/viết các thiết đặt của nó"/> <!-- HowToReproduce: In "Cloud" section of Preferences dialog, check "Set your cloud location path here: ", then click the button "...". This message is displayed in the "Browse For Folder" dialog. -->
+            <cloud-restart-warning value="Xin hãy khởi động lại NotepadPro để nó có hiệu lực."/>
+            <cloud-select-folder value="Chọn một thư mục từ/đến nơi NotepadPro đọc/viết các thiết đặt của nó"/> <!-- HowToReproduce: In "Cloud" section of Preferences dialog, check "Set your cloud location path here: ", then click the button "...". This message is displayed in the "Browse For Folder" dialog. -->
             <default-open-save-select-folder value="Chọn một thư mục làm thư mục mặc định"/> <!-- HowToReproduce: Settings > Preferences > Default Directory > [...] -->
             <shift-change-direction-tip value="Sử dụng Shift+Enter để tìm theo chiều ngược lại"/>
             <two-find-buttons-tip value="Chế độ hai nút tìm kiếm"/>

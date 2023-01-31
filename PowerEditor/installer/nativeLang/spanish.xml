@@ -331,15 +331,15 @@ The comments are here for explanation, it's not necessary to translate them.
 					<Item id="46300" name="Abrir carpeta de lenguaje definida por el usuario..."/>
 					<Item id="46301" name="Colección de lenguajes definidos para el usuario (online)"/>
 					<Item id="46180" name="Definido por el usuario"/>
-					<Item id="47000" name="Acerca de Notepad++"/>
+					<Item id="47000" name="Acerca de NotepadPro"/>
 					<Item id="47010" name="Argumentos de línea de comandos..."/>
-					<Item id="47001" name="Sitio oficial de Notepad++"/>
-					<Item id="47002" name="Página de proyecto Notepad++"/>
+					<Item id="47001" name="Sitio oficial de NotepadPro"/>
+					<Item id="47002" name="Página de proyecto NotepadPro"/>
 					<Item id="47003" name="Manual de usuario online"/>
-					<Item id="47004" name="Comunidad Notepad++ (foro)"/>
+					<Item id="47004" name="Comunidad NotepadPro (foro)"/>
 					<Item id="47012" name="Informe de depuración"/>
 					<Item id="47005" name="Obtener más complementos"/>
-					<Item id="47006" name="Actualizar Notepad++"/>
+					<Item id="47006" name="Actualizar NotepadPro"/>
 					<Item id="47009" name="Establecer proxy actualizador"/>
 					<Item id="48005" name="Importar complemento(s)..."/>
 					<Item id="48006" name="Importar tema(s)..."/>
@@ -872,7 +872,7 @@ The comments are here for explanation, it's not necessary to translate them.
 					<Item id="6121" name="Salir al cerrar la última"/>
 					<Item id="6131" name="Menú"/>
 					<Item id="6122" name="Ocultar barra de opciones (Alt o F10 para activar/desactivar)"/>
-					<Item id="6132" name="Ocultar atajos＋ ▼ ✕  en la derecha de la barra de menús (es necesario reiniciar Notepad++)"/>
+					<Item id="6132" name="Ocultar atajos＋ ▼ ✕  en la derecha de la barra de menús (es necesario reiniciar NotepadPro)"/>
 					<Item id="6123" name="Idioma"/>
 					<Item id="6128" name="Iconos alternativos"/>
 				</Global>
@@ -974,7 +974,7 @@ Puede definir varios marcadores de columna utilizando espacios en blanco para se
 					<Item id="6431" name="Abrir todos los archivos de la carpeta en lugar de usar la carpeta como área de trabajo"/>
 				</DefaultDir>
 				<FileAssoc title="Asociación de archivos">
-					<Item id="4008" name="Para usar esta función, reinicie Notepad++ en modo Administrador"/>
+					<Item id="4008" name="Para usar esta función, reinicie NotepadPro en modo Administrador"/>
 					<Item id="4009" name="Extensiones soportadas:"/>
 					<Item id="4010" name="Extensiones asociadas:"/>
 				</FileAssoc>
@@ -1044,7 +1044,7 @@ Puede definir varios marcadores de columna utilizando espacios en blanco para se
 					<Item id="6728" name="Encabezado y pie de página"/>
 				</Print>
 				<Searching title="Buscar">
-					<Item id="6902" name="Utilizar una fuente monoespaciada en el cuadro de diálogo Buscar (es necesario reiniciar Notepad++)"/>
+					<Item id="6902" name="Utilizar una fuente monoespaciada en el cuadro de diálogo Buscar (es necesario reiniciar NotepadPro)"/>
 					<Item id="6903" name="El cuadro de diálogo permanece abierto después de la búsqueda que muestra la ventana de resultados"/>
 					<Item id="6904" name="Confirmar &quot;Sustituir todo&quot; en todos los documentos abiertos"/>
 					<Item id="6905" name="Reemplazar: no moverse a la siguiente coincidencia"/>
@@ -1104,10 +1104,10 @@ Puede definir varios marcadores de columna utilizando espacios en blanco para se
 				</AutoCompletion>
 				<MultiInstance title="Multi instancia &amp; Fecha">
 					<Item id="6151" name="Configuración *"/>
-					<Item id="6152" name="Abrir sesión en nueva instancia de Notepad++**"/>
+					<Item id="6152" name="Abrir sesión en nueva instancia de NotepadPro**"/>
 					<Item id="6153" name="Usar siempre en modo de múltiples instancias"/>
 					<Item id="6154" name="Instancia única por defecto"/>
-					<Item id="6155" name="* Si modifica estos ajustes tiene que reiniciar Notepad++&#xA;** y guardar la sesión automáticamente al salir"/>
+					<Item id="6155" name="* Si modifica estos ajustes tiene que reiniciar NotepadPro&#xA;** y guardar la sesión automáticamente al salir"/>
 					<Item id="6171" name="Personalizar &quot;Insertar fecha y hora&quot;"/>
 					<Item id="6175" name="Orden inverso de fecha y hora predeterminada (formatos corto &amp; largo)"/>
 					<Item id="6172" name="Formato personalizado:"/>
@@ -1164,11 +1164,11 @@ Puede definir varios marcadores de columna utilizando espacios en blanco para se
 					<Item id="6313" name="Actualizar sin notificar"/>
 					<Item id="6325" name="Ir a la última línea tras actualizar"/>
 					<Item id="6322" name="Extensión del archivo de sesión:"/>
-					<Item id="6323" name="Actualizar automáticamente Notepad++"/>
+					<Item id="6323" name="Actualizar automáticamente NotepadPro"/>
 					<Item id="6324" name="Cambiar de documento (Ctrl+TAB)"/>
 					<Item id="6331" name="Mostrar solo nombre de archivo en el título de la ventana"/>
 					<Item id="6334" name="Autodetectar codificación"/>
-					<Item id="6349" name="Usar DirectWrite (puede mejorar la representación de caracteres especiales, es necesario reiniciar Notepad++)"/>
+					<Item id="6349" name="Usar DirectWrite (puede mejorar la representación de caracteres especiales, es necesario reiniciar NotepadPro)"/>
 					<Item id="6337" name="Ext. del archivo área de trabajo:"/>
 					<Item id="6114" name="Permitir"/>
 					<Item id="6117" name="Ordenar por el usado más reciente"/>
@@ -1243,8 +1243,8 @@ Puede reactivarlo en Preferencias si lo desea."/>
 		</Dialog>
 		<MessageBox>
 			<!-- $INT_REPLACE$ is a place holder, don't translate it -->
-			<ContextMenuXmlEditWarning title="Editar menú emergente" message="Editar 'contextMenu.xml' le permite modificar el menú contextual emergente de Notepad++.
-Tiene que reiniciar Notepad++ para que surta efecto después de modificarlo."/>
+			<ContextMenuXmlEditWarning title="Editar menú emergente" message="Editar 'contextMenu.xml' le permite modificar el menú contextual emergente de NotepadPro.
+Tiene que reiniciar NotepadPro para que surta efecto después de modificarlo."/>
 			<SaveCurrentModifWarning title="Guardar modificación actual" message="Debe guardar la modificación actual.
 Las modificaciones guardadas no se pueden deshacer.
 
@@ -1255,11 +1255,11 @@ Las modificaciones guardadas no se pueden deshacer.
 
 ¿Continuar?"/>
 			<!-- HowToReproduce: when you openned file is modified and saved, then you are changing file encoding. -->
-			<CannotMoveDoc title="Mover a la nueva instancia de Notepad++" message="El documento ha sido modificado. Guárdelo y vuelva a intentarlo."/>
-			<!-- HowToReproduce: From your Notepad++ drag & drop a clean (not dirty) file to outside of Notepad++, another instance of Notepad++ will be created. Then from your first Notepad++ drag & drop an unsaved file to the new instance. -->
-			<DocReloadWarning title="Recargar" message="¿Está seguro de que desea volver a cargar el archivo actual y perder los cambios realizados en Notepad++?"/>
+			<CannotMoveDoc title="Mover a la nueva instancia de NotepadPro" message="El documento ha sido modificado. Guárdelo y vuelva a intentarlo."/>
+			<!-- HowToReproduce: From your NotepadPro drag & drop a clean (not dirty) file to outside of NotepadPro, another instance of NotepadPro will be created. Then from your first NotepadPro drag & drop an unsaved file to the new instance. -->
+			<DocReloadWarning title="Recargar" message="¿Está seguro de que desea volver a cargar el archivo actual y perder los cambios realizados en NotepadPro?"/>
 			<FileLockedWarning title="Imposible guardarlo" message="Compruebe si este archivo está abierto por otro programa"/>
-			<FileAlreadyOpenedInNpp title="Información" message="El archivo ya está abierto en Notepad++"/>
+			<FileAlreadyOpenedInNpp title="Información" message="El archivo ya está abierto en NotepadPro"/>
 			<!-- HowToReproduce: Open a new document and open a file "c:/tmp/foo", save this new document by choosing "c:/tmp/foo" as file to save, reply the override popup "yes", then this message appears. -->
 			<RenameTabTemporaryNameAlreadyInUse title="No se pudo cambiar el nombre" message="El nombre especificado ya está en uso en otra pestaña."/>
 			<!-- HowToReproduce: Rename the tab of an untitled document and provide a name that is the same as an already-existing tab of an untitled document. -->
@@ -1267,7 +1267,7 @@ Las modificaciones guardadas no se pueden deshacer.
 			<!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
 			<NbFileToOpenImportantWarning title="La cantidad de archivos para abrir es demasiado grande" message="Se abrirán $INT_REPLACE$ archivos.
 ¿Desea abrir todos estos archivos?"/>
-			<!-- HowToReproduce: Check "Open all files of folder instead of launching Folder as Workspace on folder dropping" in "Default Directory" of Preferences dialog, then drop a folder which contains more then 200 files into Notepad++. -->
+			<!-- HowToReproduce: Check "Open all files of folder instead of launching Folder as Workspace on folder dropping" in "Default Directory" of Preferences dialog, then drop a folder which contains more then 200 files into NotepadPro. -->
 			<SettingsOnCloudError title="Configuración en la nube" message="Parece que la ruta de la configuración en la nube se establece en una unidad de solo lectura o en una carpeta que necesita derecho de acceso para escritura.
 
 Su configuración en la nube será cancelada. Reinicie con un valor coherente usando el cuadro de diálogo de Preferencias."/>
@@ -1296,16 +1296,16 @@ Este archivo ha sido modificado por otro programa.
 			<DoReloadOrNotAndLooseChange title="Recargar" message="&quot;$STR_REPLACE$&quot;
 
 Este archivo ha sido modificado por otro programa.
-¿Desea volver a cargarlo y perder los cambios realizados en Notepad++?"/>
+¿Desea volver a cargarlo y perder los cambios realizados en NotepadPro?"/>
 			<PrehistoricSystemDetected title="Detectado sistema obsoleto" message="Parece que todavía usa un sistema obsoleto. Lamentablemente esta función solo funciona en un sistema más moderno."/>
 			<!-- HowToReproduce: Launch "Document Map" under Windows XP. -->
-			<XpUpdaterProblem title="Actualizador Notepad++" message="El actualizador de Notepad++ no es compatible con XP debido a la capa de seguridad obsoleta en XP.
-¿Desea ir a la página de Notepad++ para descargar la última versión?"/>
-			<!-- HowToReproduce: Run menu "? -> Update Notepad++" under Windows XP. -->
-			<GUpProxyConfNeedAdminMode title="Configuración del proxy" message="Para cambiar la configuración del proxy, reinicie Notepad++ en modo Administrador."/>
+			<XpUpdaterProblem title="Actualizador NotepadPro" message="El actualizador de NotepadPro no es compatible con XP debido a la capa de seguridad obsoleta en XP.
+¿Desea ir a la página de NotepadPro para descargar la última versión?"/>
+			<!-- HowToReproduce: Run menu "? -> Update NotepadPro" under Windows XP. -->
+			<GUpProxyConfNeedAdminMode title="Configuración del proxy" message="Para cambiar la configuración del proxy, reinicie NotepadPro en modo Administrador."/>
 			<DocTooDirtyToMonitor title="Problema de monitorización" message="El documento no está limpio. Guarde las modificaciones antes de monitorearlo."/>
 			<DocNoExistToMonitor title="Problema de monitorización" message="El archivo debe existir para ser monitoreado."/>
-			<FileTooBigToOpen title="Problema de tamaño de archivo" message="El archivo es demasiado grande para abrirlo con Notepad++"/>
+			<FileTooBigToOpen title="Problema de tamaño de archivo" message="El archivo es demasiado grande para abrirlo con NotepadPro"/>
 			<!-- HowToReproduce: Try to open a 4GB file (it's not easy to reproduce, it depends on your system). -->
 			<FileLoadingException title="Código de excepción: $STR_REPLACE$" message="Se produjo un error al cargar el archivo!"/>
 			<WantToOpenHugeFile title="Advertencia de apertura de un archivo de gran tamaño" message="Abrir un archivo de más de 2 GB puede llevar varios minutos. Desea abrirlo?"/>
@@ -1320,9 +1320,9 @@ Este archivo ha sido modificado por otro programa.
 			<LoadStylersFailed title="Error al cargar stylers.xml" message="La carga de &quot;$STR_REPLACE$&quot; ha fallado"/>
 			<LoadLangsFailed title="Configurador" message="La carga de langs.xml ha fallado
 ¿Desea recuperar su langs.xml?"/>
-			<!-- HowToReproduce: Close Notepad++. Use another editor to remove all content of "langs.xml" (0 length) then save it. Open Notepad++. -->
+			<!-- HowToReproduce: Close NotepadPro. Use another editor to remove all content of "langs.xml" (0 length) then save it. Open NotepadPro. -->
 			<LoadLangsFailedFinal title="Configurador" message="La carga de langs.xml ha fallado"/>
-			<!-- HowToReproduce: Close Notepad++. Use another editor to make "langs.xml" an invalid xml file then save it. Open Notepad++. -->
+			<!-- HowToReproduce: Close NotepadPro. Use another editor to make "langs.xml" an invalid xml file then save it. Open NotepadPro. -->
 			<FolderAsWorspaceSubfolderExists title="Carpeta como espacio de trabajo indica un problema de carpeta" message="Existe una subcarpeta de la carpeta que desea agregar.
 Elimine su carpeta raíz del panel antes de agregar &quot;$STR_REPLACE$&quot;."/>
 			<!-- HowToReproduce: Add a folder like "c:\temp\aFolder\" into "Folder as Workspace" panel, then try to add "c:\temp\". -->
@@ -1346,18 +1346,18 @@ Es necesario darle otro."/>
 			<SCMapperDoDeleteOrNot title="Confirmación" message="¿Está seguro de que desea eliminar este acceso directo?"/>
 			<FindCharRangeValueError title="Problema de valor de rango" message="Debe escribir entre 0 y 255."/>
 			<OpenInAdminMode title="Error al guardar" message="El archivo no se puede guardar y puede estar protegido.
-¿Desea iniciar Notepad++ en modo Administrador?"/>
+¿Desea iniciar NotepadPro en modo Administrador?"/>
 			<OpenInAdminModeWithoutCloseCurrent title="Error al guardar" message="El archivo no se puede guardar y puede estar protegido.
-¿Desea iniciar Notepad++ en modo Administrador?"/>
-			<OpenInAdminModeFailed title="Error al abrir en modo Administrador" message="Notepad++ no se puede abrir en modo Administrador."/>
+¿Desea iniciar NotepadPro en modo Administrador?"/>
+			<OpenInAdminModeFailed title="Error al abrir en modo Administrador" message="NotepadPro no se puede abrir en modo Administrador."/>
 			<!-- HowToReproduce: When you have no Admin privilege and you try to save a modified file in a protected location (for example: any file in sub-folder of "C:\Program Files\". This message will appear after replying "Yes" to "Open in Admin mode" dialog. -->
 			<ViewInBrowser title="Ver archivo actual en el navegador" message="No se puede encontrar la aplicación en su sistema."/>
-			<ExitToUpdatePlugins title="Está a punto de salir de Notepad++" message="Si hace clic en SÍ, saldrá de Notepad++ para continuar con las operaciones.
-Notepad++ se reiniciará después de que finalicen todas.
+			<ExitToUpdatePlugins title="Está a punto de salir de NotepadPro" message="Si hace clic en SÍ, saldrá de NotepadPro para continuar con las operaciones.
+NotepadPro se reiniciará después de que finalicen todas.
 ¿Continuar?"/>
-			<NeedToRestartToLoadPlugins title="Necesita reiniciar Notepad++" message="Debe reiniciar Notepad++ para cargar los complementos que instaló."/>
+			<NeedToRestartToLoadPlugins title="Necesita reiniciar NotepadPro" message="Debe reiniciar NotepadPro para cargar los complementos que instaló."/>
 			<!-- HowToReproduce: Import a plugin via menu "Settings->Import->Import Plugin(s)...". -->
-			<ChangeHistoryEnabledWarning title="Es necesario reiniciar Notepad++" message="Tiene que reiniciar Notepad++ para activar el historial de cambios."/>
+			<ChangeHistoryEnabledWarning title="Es necesario reiniciar NotepadPro" message="Tiene que reiniciar NotepadPro para activar el historial de cambios."/>
 			<!-- HowToReproduce: uncheck "Display Change History" via Preferences dialog "Marges/Border/Edge. -->
 		</MessageBox>
 		<ClipboardHistory>
@@ -1476,8 +1476,8 @@ Notepad++ se reiniciará después de que finalicen todas.
 			<backup-select-folder value="Seleccione una carpeta como directorio de copia de seguridad"/>
 			<!-- HowToReproduce: Settings > Preferences > Backup > [...] -->
 			<cloud-invalid-warning value="Ruta no válida."/>
-			<cloud-restart-warning value="Reinicie Notepad++ para que tome efecto."/>
-			<cloud-select-folder value="Seleccione una carpeta en la que Notepad++ lea o escriba sus configuraciones"/>
+			<cloud-restart-warning value="Reinicie NotepadPro para que tome efecto."/>
+			<cloud-select-folder value="Seleccione una carpeta en la que NotepadPro lea o escriba sus configuraciones"/>
 			<!-- HowToReproduce: In "Cloud" section of Preferences dialog, check "Set your cloud location path here: ", then click the button "...". This message is displayed in the "Browse For Folder" dialog. -->
 			<default-open-save-select-folder value="Seleccionar una carpeta como directorio predeterminado"/>
 			<!-- HowToReproduce: Settings > Preferences > Default Directory > [...] -->
