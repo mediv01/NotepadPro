@@ -1,7 +1,7 @@
 // IDAllocator.h code is copyrighted (C) 2010 by Dave Brotherstone
 
 // This file is part of NotepadPro project
-// Copyright (C)2021 Don HO <don.h@free.fr>
+// Copyright (C)2023 mediv01 <mediv01@163.com>
 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
