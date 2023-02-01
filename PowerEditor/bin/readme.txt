@@ -1,5 +1,4 @@
 NotepadPro介绍
-发行版     Appveyor build status
 
 NotepadPro是一个免费的开源文本编辑器，支持多种编程语言和自然语言。 NotepadPro来自Notepad++重新编译，目前支持Windows环境下X64版本以及X86版本。 NotepadPro在GPL License下发布。
 
@@ -28,3 +27,6 @@ NotepadPro是个遵守GPL License的开源免费软件，大家完全可以免�
 
 关于作者
 NotepadPro的作者是mediv01，中国大陆地区某大型公司程序员，主要使用Java语言进行开发，业余的时候也会做一些C++、Python开源项目。本软件完全免费，如果你喜欢本软件，也欢迎赞助。
+
+Github社区：https://github.com/mediv01/NotepadPro
+Gitee社区：https://gitee.com/mediv0001/NotepadPro
