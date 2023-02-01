@@ -108,6 +108,9 @@ copy ..\src\shortcuts.xml ..\bin\shortcuts.xml
 copy ..\src\contextMenu.xml ..\bin\contextMenu.xml
       </Command>
     </PostBuildEvent>
+    <Link>
+      <OutputFile>$(OutDir)NotepadPro.exe</OutputFile>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PostBuildEvent>

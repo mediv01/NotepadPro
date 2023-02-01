@@ -9,7 +9,7 @@
 
 cmake_minimum_required(VERSION 3.4)
 
-PROJECT(Notepad++)
+PROJECT(NotepadPro)
 
 SET(projIncludDir	../../scintilla/include/
 					../../lexilla/include/
