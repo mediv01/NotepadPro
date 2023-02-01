@@ -21,7 +21,8 @@
 //
 #define NOTEPAD_PLUS_VERSION TEXT("NotepadPro v8.4.8")
 
-#define NOTEPADPRO_TILTE_TEXT TEXT("NotepadPro 中华复兴版")
+// #define NOTEPADPRO_TILTE_TEXT TEXT("NotepadPro 中华复兴版")
+#define NOTEPADPRO_TILTE_TEXT TEXT("NotepadPro")
 // 标题显示的名称
 
 // should be X.Y : ie. if VERSION_DIGITALVALUE == 4, 7, 1, 0 , then X = 4, Y = 71
