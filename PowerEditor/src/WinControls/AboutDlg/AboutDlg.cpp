@@ -52,6 +52,7 @@ intptr_t CALLBACK AboutDlg::run_dlgProc(UINT message, WPARAM wParam, LPARAM lPar
 
             _pageLink.init(_hInst, _hSelf);
             _pageLink.create(::GetDlgItem(_hSelf, IDC_HOME_ADDR), TEXT("github.com/mediv01/NotepadPro"));
+            _pageLink.create(::GetDlgItem(_hSelf, IDC_HOME_ADDR2), TEXT("gitee.com/mediv0001/NotepadFree"));
 
 			getClientRect(_rc);
 
