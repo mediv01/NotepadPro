@@ -3254,7 +3254,7 @@ void Notepad_plus::command(int id)
 		}
 		case IDM_PROJECTPAGE :
 		{
-			::ShellExecute(NULL, TEXT("open"), TEXT("https://gitee.com/mediv0001/notepadpro"), NULL, NULL, SW_SHOWNORMAL);
+			::ShellExecute(NULL, TEXT("open"), TEXT("https://gitee.com/mediv0001/NotepadPro"), NULL, NULL, SW_SHOWNORMAL);
 			break;
 		}
 
@@ -3273,7 +3273,7 @@ void Notepad_plus::command(int id)
 
 		case IDM_FORUM:
 		{
-			::ShellExecute(NULL, TEXT("open"), TEXT("https://gitee.com/mediv0001/notepadpro"), NULL, NULL, SW_SHOWNORMAL);
+			::ShellExecute(NULL, TEXT("open"), TEXT("https://gitee.com/mediv0001/NotepadPro"), NULL, NULL, SW_SHOWNORMAL);
 			break;
 		}
 
@@ -3292,7 +3292,7 @@ void Notepad_plus::command(int id)
 
 				if (res == IDYES)
 				{
-					::ShellExecute(NULL, TEXT("open"), TEXT("https://gitee.com/mediv0001/notepadpro"), NULL, NULL, SW_SHOWNORMAL);
+					::ShellExecute(NULL, TEXT("open"), TEXT("https://gitee.com/mediv0001/NotepadPro"), NULL, NULL, SW_SHOWNORMAL);
 				}
 			}
 			else
@@ -3496,7 +3496,7 @@ void Notepad_plus::command(int id)
 
 		case IDM_LANG_UDLCOLLECTION_PROJECT_SITE:
 		{
-			::ShellExecute(NULL, TEXT("open"), TEXT("https://gitee.com/mediv0001/notepadpro/userDefinedLanguages"), NULL, NULL, SW_SHOWNORMAL);
+			::ShellExecute(NULL, TEXT("open"), TEXT("https://gitee.com/mediv0001/NotepadPro"), NULL, NULL, SW_SHOWNORMAL);
 			break;
 		}
 
