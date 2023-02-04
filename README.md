@@ -5,6 +5,7 @@ NotepadPro介绍
 &nbsp;&nbsp;&nbsp;&nbsp;[![Appveyor build status](img/readme/NotepadProBuildStatus.svg)](../../releases/latest)
 
 NotepadPro是一个免费的开源文本编辑器，支持多种编程语言和自然语言。 NotepadPro来自Notepad++重新编译，目前支持Windows环境下X64版本以及X86版本。 NotepadPro在[GPL License](LICENSE)下发布。
+[![IMG](img/readme/NotepadProNormal.jpg)](img/readme/NotepadProNormal.jpg)
 
 NotepadPro在[Github](https://github.com/mediv01/NotepadPro) 社区以及[Gitee](https://gitee.com/mediv0001/NotepadPro)社区上同步发行。
 
@@ -19,6 +20,7 @@ NotepadPro基于Notepad++重新编译，不仅兼容Notepad++历史插件，而�
 此外，Notepad++作者曾提出如果不同意其政治观点，Notepad++可能会在源代码文件里插入随机乱码破坏文件。根据目前GIT源代码提交记录，NotepadPro源代码中没有这一恶意功能，大家可以放心使用，未来也会加倍注意，避免恶意代码合入NotepadPro分支。
 
 除了正常版本，NotepadPro还提供了主旋律版，功能与正常版完全相同，仅仅在软件标题处显示为“中华复兴版”以及在关于本软件处显示“盛世华夏四海庆，春满神州中华兴”
+[![IMG](img/readme/NotepadProRiseofChina.jpg)](img/readme/NotepadProRiseofChina.jpg)
 
 作者本人在工作以及生活中也在使用NotepadPro软件，主要用NotepadPro处理一些文本文件的编辑、日志查看以及文本备忘录生成等内容。对于软件使用中存在的问题，作者也会尽力修复。
 
